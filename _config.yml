@@ -1,64 +1,61 @@
 # Harmony Jekyll theme general configurations 
 
 # Base URL
-baseurl: /harmony
+baseurl: ""
 
 # Site live URL
-url: http://gayan.me
+#url: http://cursorzz.github.io
 
-# Localhost 
-# url: http://127.0.0.1:4000  
+# localhost 
+url: http://127.0.0.1:4000  
 
-# Harmony theme configuration. Please change accordingly.
+# harmony theme configuration. please change accordingly.
 harmony:
-  name: Harmony
-  # Little description about your site
-  description: Harmony is free responsive jekyll theme.
-  # 'meta_description:' Write an awesome description for your new site here.
-  # It will appear in your document head meta (for Google search results) and 
+  name: A Coder's Dream
+  # little description about your site
+  description: Simple is Good
+  # 'meta_description:' write an awesome description for your new site here.
+  # it will appear in your document head meta (for google search results) and 
   # in your feed.xml site description.
   meta_description: > # 
-   Harmony is a free responsive jekyll theme by Gayan Virajith
-   and Maheshika Lakmali. Sourced on Github - 
-   https://github.com/gayanvirajith/harmony
-  basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
-  author: # Author details
-    name: Gayan Virajith
-    email: gayanvirajith@gmail.com
-    url: http://gayanvirajith.github.io
+  basetheme: darken # pre defined thmes are darken, blue-water, redish.
+  #author: # author details
+    #name: gayan virajith
+    #email: gayanvirajith@gmail.com
+    #url: http://gayanvirajith.github.io
 
-  # Google Analytics key, leave blank to ignore
-  google_analytics_key: UA-xxxx-x
+  # google analytics key, leave blank to ignore
+  #google_analytics_key: ua-xxxx-x
 
-  # Profile links, leave blank to ignore
+  # profile links, leave blank to ignore
   social: 
-    github: gayanvirajith
-    twitter: gayanvirajith
-    facebook: gayanvirajith
-    gplus: +GayanVirajith
-    dribble: gayan
-    pinterest: 
-  # Toggle disclaimer in footer
+    github: cursorzz
+    twitter: cursorzz
+    #facebook: gayanvirajith
+    #gplus: +gayanvirajith
+    #dribble: gayan
+    #pinterest: 
+  # toggle disclaimer in footer
   show_disclaimer: true
 
-# Conversion / Build settings 
-markdown:    kramdown
-# This is how you put pygments config in jekyll 2.0 instead of pygments: true
-highlighter: pygments 
+# conversion / build settings 
+markdown:    redcarpet
+# this is how you put pygments config in jekyll 2.0 instead of pygments: true
+#highlighter: pygments 
 
-# Permalinks
+# permalinks
 permalink:        pretty
 
 exclude: 
-  - CNAME
-  - Gemfile
-  - Rakefile
-  - README.md
+  - cname
+  - gemfile
+  - rakefile
+  - readme.md
   - .gitignore
   - .sass-cache
-  - Gemfile.lock
+  - gemfile.lock
 
-# Sass conversion configs
+# sass conversion configs
 sass:
     sass_dir: assets/css/_sass
     style: :compressed
