@@ -4,10 +4,10 @@
 baseurl: ""
 
 # Site live URL
-# url: http://cursorzz.github.io
+url: http://cursorzz.github.io
 
 # localhost 
-url: http://127.0.0.1:4000  
+# url: http://127.0.0.1:4000  
 
 # harmony theme configuration. please change accordingly.
 harmony:
