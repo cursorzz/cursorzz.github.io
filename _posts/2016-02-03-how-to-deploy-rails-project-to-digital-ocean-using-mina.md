@@ -5,9 +5,8 @@ date: 2016-02-03
 summary: |
 tags: rails deploy digital_ocean mina
 ---
-
-# Server configuration
 ---
+# Server configuration
 ### create deploy user
 
 ```shell
@@ -18,19 +17,23 @@ passwd deploy
 ```shell
 chsh -s /bin/bash user
 ```
+
 reference: [users and groups](https://wiki.archlinux.org/index.php/users_and_groups)
 
 ### create ssh keys for easier access
 
 1. create key pairs on client
+
 ```bash
 ssh-keygen -t rsa
 ```
 
 2. upload public key to server
+
 ```bash
 cat ~/.ssh/id_rsa.pub | ssh user@123.45.56.78 "mkdir -p ~/.ssh && cat >>  ~/.ssh/authorized_keys"
 ```
+
 reference: [ssh keys](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2)
 
 
@@ -45,7 +48,8 @@ wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearc
 sudo dpkg -i elasticsearch-1.3.2.deb
 ```
 
-* uninstall via DEB
+* 2015-05-14-create-our-own-ember-model.md uninstall via DEB
+
 ```bash
 sudo dpkg -r DEB_PACKAGE
 ```
@@ -56,8 +60,11 @@ sudo dpkg -r DEB_PACKAGE
 ### In order to start elasticsearch, execute
  sudo /etc/init.d/elasticsearch start
 ```
+
 # Mina deployment
+
 ---
+
 ### mina config
 first add mina and related gems to `Gemfile` and `bundle install`
 
@@ -70,12 +77,15 @@ group :development do
 end
 ```
 then we initialize an deploy config file by:
+
 ```bash
 mina init
 ```
+
 this will generate config/deploy.rb
 
 next we need add addons to deploy file, like below:
+
 ```ruby
 require 'mina/bundler'
 require 'mina/rails'
@@ -220,9 +230,11 @@ mina staging setup
 ```
 
 Then we deploy code to server by running
+
 ```bash
 mina staging deploy
 ```
+
 you may encounter deploy errors when deploy
 
 #### db:migration error
@@ -252,6 +264,7 @@ production:
   username: rails
   password: <%= ENV['APP_DATABASE_PASSWORD'] %>
 ```
+
 APP_DATABASE_PASSWORD can be set in your bashrc file, **please notice that if you do this, you need put export env to the top of the bashrc file** 
 see [mina issue](http://stackoverflow.com/a/33014007) for more details
 
@@ -274,6 +287,7 @@ echo "export APP_SECRET=$(rake secret)"
 ### Puma control
 
 If deploy command running without any error, an app server should be up and running, here we use puma as the app server, the code we use to start a puma server is lay in code below:
+
 ```ruby
 to :launch do
   queue "mkdir -p #{deploy_to}/#{current_path}/tmp/"
