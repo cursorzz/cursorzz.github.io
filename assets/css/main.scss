@@ -768,3 +768,19 @@ tbody tr:nth-child(odd) th {
   border-bottom-radius: 0.5em;
   border-bottom: 3px solid #D5D5D5;
 }
+
+h3 {
+  display: flex;
+  padding-top: 2rem;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    height: 2rem;
+    padding: 0 !important;
+  }
+}
+
+.position {
+padding: 5px 25px 5px 5px
+}
