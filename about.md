@@ -12,9 +12,9 @@ permalink: /about/
 
 * 网站开发经验丰富. 精通 `Python, Ruby, Ruby on Rails, Django, javascript, jQuery`
 
-* 熟悉流行前端框架： `AngularJS, Ember.js, Vue.js`
+* 熟悉流行前端框架： `AngularJS, Ember.js, Vue.js, React 以及 React Native`
 
-* 熟练掌握 `mysql` 和 `redis`. 熟悉 `html`, `css`.
+* 熟练掌握 `mysql`, `postgresql`, 和 `redis`. 熟悉 `html`, `css`.
 
 * 涉猎各种框架及技术, 如 `flask, sinatra, phoenix`
 
@@ -22,10 +22,27 @@ permalink: /about/
 
 ## **Path**
 
-### <a class="company-logo">成都彩程设计</a>
-#### <span class="position">ruby高级开发工程师</span><span class="period" >2017 - 至今 </span>
+### <a class="company-logo">武汉氪林博科技有限公司</a>
+#### <span class="position">项目主管</span><span class="period" >2018 - 至今 </span>
 
-负责知人项目的开发
+公司项目负责人
+
+* Frankgreen pay
+
+负责咖啡杯支付系统移动端及后端开发. 项目后端使用 *Ruby on Rails* 开发, 对接澳洲本地支付系统, 移动端使用 *ionic* + *Angular 6* 开发. 
+
+* Gignation
+
+瑞典本土任务协同管理系统, 负责后端以及网页端开发. 项目后端使用 *Ruby on Rails* 开发, 前端使用 *Angular*
+
+* 车联网app
+
+负责车载系统app端开发, 使用到的技术有 *React Native*, *Webrtc*
+
+### <a class="company-logo">成都彩程设计</a>
+#### <span class="position">ruby高级开发工程师</span><span class="period" >2017 - 2018 </span>
+
+负责知人项目人事模块开发
 
 ### <a class="company-logo">北京盛安德科技发展有限公司武汉分公司</a><img src="{{ site.base_url }}/assets/css/images/shinetech.png" alt="logo">
 #### <span class="position">ruby高级开发工程师</span><span class="period" >2014.11 - 2017 </span>
@@ -38,7 +55,7 @@ permalink: /about/
 
 企业级定制竞投标系统. 负责前后端开发。 后端使用Ruby on Rails, elastic search 等技术. 前端使用 AngularJS
 
-* Velox
+* Velox [https://app.veloxapps.com](https://app.veloxapps.com)
 
 企业级流程管理系统. 负责前后端网页开发，以及IOS, Android 开发. 采用前后端分离方式. 后端使用 Ruby on Rails, 前端使用 Ember.js. 移动端使用 Cordova.
 
